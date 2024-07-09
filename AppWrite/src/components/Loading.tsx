@@ -21,6 +21,7 @@ const DivSC = styled.div`
   height: 100dvh;
   margin: 0 auto;
   opacity: 1;
+  background-color: var(--bg-color);
   transition: opacity 0.5s ease-in-out;
 
   span {

@@ -1,25 +1,26 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Login } from "./pages/Login";
 import { Home } from "./pages/Home";
 import { account } from "./api/appwrite";
 import { Loading } from "./components/Loading";
+import { AnimatePresence } from "framer-motion";
 
 export const AppRouter = () => {
-  document.documentElement.classList.add("light");
+  document.documentElement.classList.add("dark");
+  const location = useLocation();
+
   return (
-    <BrowserRouter>
-      <Routes>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         <Route element={<LoginProtector />}>
           <Route index element={<Home />} />
         </Route>
         <Route path="login" element={<Login />} />
       </Routes>
-    </BrowserRouter>
+    </AnimatePresence>
   );
 };
-
-/******************************************************************************/
 
 const LoginProtector: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,4 +46,9 @@ const LoginProtector: React.FC = () => {
   }
 
   return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
+};
+
+export const GoTo = (path: string) => () => {
+  const navigate = useNavigate();
+  navigate(path);
 };
