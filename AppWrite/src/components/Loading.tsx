@@ -14,11 +14,12 @@ export const Loading: FC<LoadingProps> = ({ style }) => {
 };
 
 const DivSC = styled.div`
+  z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
   margin: 0 auto;
   opacity: 1;
   background-color: var(--bg-color);
@@ -26,7 +27,7 @@ const DivSC = styled.div`
 
   span {
     content: " ";
-    border: 5px solid #333;
+    border: 5px solid var(--color1);
     border-radius: 30px;
     height: 30px;
     left: 50%;

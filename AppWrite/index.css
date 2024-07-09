@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html > div {
+  display: none; /*Hide Lucid Mode in Opera*/
+}
+header,
+footer,
+main,
+div,
+section,
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  z-index: 3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--height);
+  padding: var(--space1);
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow1);
+  transition: all 0.25s ease-in-out;
+}
+main#Container {
+  overflow: hidden;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding: calc(var(--height) + var(--space2)) var(--space1);
+}
+div#Container {
+  gap: var(--space1);
+  padding: var(--space1) var(--space2);
+}
+section#Container {
+  gap: var(--space1);
+}
+form {
+  gap: var(--space1);
+  padding: var(--space2);
+}
+h2 {
+  font-size: var(--size2);
+  line-height: var(--size3);
+}
+h3 {
+  font-size: var(--size3);
+}
+h4 {
+  font-size: var(--size4);
+  line-height: var(--size5);
+}
+h5 {
+  font-size: var(--size5);
+  font-weight: 500;
+}
+h6 {
+  font-size: var(--size6);
+  font-weight: 500;
+}
+strong,
+a {
+  font-size: var(--size7);
+  font-weight: 500;
+}
+p {
+  font-family: var(--family1);
+  font-size: var(--size7);
+}

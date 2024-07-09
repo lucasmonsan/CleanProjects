@@ -1,5 +1,6 @@
 import { FC, FormEvent, useState } from "react";
 import { account } from "../api/appwrite"; // Importe o cliente do AppWrite aqui
+import { Main } from "../components/Containers";
 
 interface LoginProps {}
 
@@ -11,10 +12,7 @@ export const Login: FC<LoginProps> = (props) => {
     e.preventDefault();
 
     try {
-      // Chame a API de autenticação do AppWrite
       const response = await account.createEmailPasswordSession(email, password);
-
-      // Se o login for bem-sucedido, você pode redirecionar o usuário ou atualizar o estado do aplicativo
       console.log("Login successful!", response);
     } catch (error) {
       console.error("Error logging in:", error);
@@ -24,7 +22,7 @@ export const Login: FC<LoginProps> = (props) => {
   const handleLogout = async () => await account.deleteSessions();
 
   return (
-    <main>
+    <Main>
       <h1>Login</h1>
       <form
         onSubmit={handleSubmit}
@@ -46,6 +44,6 @@ export const Login: FC<LoginProps> = (props) => {
         <button type="submit">Login</button>
       </form>
       <button onClick={handleLogout}>Logout</button>
-    </main>
+    </Main>
   );
 };
