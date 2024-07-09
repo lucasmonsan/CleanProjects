@@ -1,8 +1,8 @@
 {
   "singleQuote": false,
   "jsxSingleQuote": false,
-  "printWidth": 320,
-  "trailingComma": "es6",
+  "printWidth": 120,
+  "trailingComma": "none",
   "tabWidth": 2,
   "semi": false,
   "overrides": [

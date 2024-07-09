@@ -1,0 +1,30 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [80, 120],
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontLigatures": true,
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "editor.semanticHighlighting.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "explorer.fileNesting.enabled": true,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "explorer.fileNesting.patterns": {
+    "index.html": ".eslint*, prettier*, tsconfig*, vite*, .git*, package*, README*, LICENSE*"
+  },
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.formatOnSave.enabled": true,
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.activityBar.location": "top",
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "symbols.hidesExplorerArrows": false,
+  "prettier.printWidth": 120
+}

@@ -12,10 +12,7 @@ export const Login: FC<LoginProps> = (props) => {
 
     try {
       // Chame a API de autenticação do AppWrite
-      const response = await account.createEmailPasswordSession(
-        email,
-        password
-      );
+      const response = await account.createEmailPasswordSession(email, password);
 
       // Se o login for bem-sucedido, você pode redirecionar o usuário ou atualizar o estado do aplicativo
       console.log("Login successful!", response);
@@ -35,16 +32,10 @@ export const Login: FC<LoginProps> = (props) => {
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
-          width: "50rem",
+          width: "100%",
         }}
       >
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
         <input
           type="password"
           value={password}

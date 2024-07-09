@@ -12,12 +12,34 @@
       html > div {
         display: none; /*Hide Lucid Mode in Opera*/
       }
+      .light:root {
+        --bg-color: #ffffff;
+        --comp-color: #f0f2f5;
+        --border-color: #e0e4e8;
+        --text-color: #181a20;
+        --color1: #f57c00;
+        --color2: #d32f2f;
+      }
+      .dark:root {
+        --bg-color: #181a20;
+        --comp-color: #1f222a;
+        --border-color: #2d2f38;
+        --text-color: #ffffff;
+        --color1: #db7c26;
+        --color2: #780116;
+      }
+      :root {
+        --transparent: #00000000;
+        --black: #181a20;
+        --white: #ffffff;
+        --grayout: #000000bb;
+        background-color: var(--bg-color);
+      }
     </style>
-
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CleanProject - ReactTS</title>
+    <title>Whallet</title>
   </head>
   <body>
     <div id="root"></div>
