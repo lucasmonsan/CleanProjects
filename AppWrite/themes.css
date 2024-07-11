@@ -1,22 +1,20 @@
 .light:root {
-  --bg-color: #ffffff;
+  --bg-color: #efedeb;
   --comp-color: #f0f2f5;
   --border-color: #e0e4e8;
   --text-color: #181a20;
-  --color1: #f57c00;
-  --color2: #d32f2f;
 }
 .dark:root {
   --bg-color: #181a20;
   --comp-color: #1f222a;
   --border-color: #2d2f38;
-  --text-color: #ffffff;
-  --color1: #db7c26;
-  --color2: #780116;
+  --text-color: #efedeb;
 }
 :root {
   --transparent: #00000000;
   --black: #181a20;
-  --white: #ffffff;
+  --white: #efedeb;
   --grayout: #000000bb;
+  --color1: #6c67fa;
+  --color2: #fa7c36;
 }

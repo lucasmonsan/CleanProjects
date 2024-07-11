@@ -1,15 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-html > div {
-  display: none; /*Hide Lucid Mode in Opera*/
-}
 header,
 footer,
 main,
@@ -37,18 +25,31 @@ main#Container {
   overflow: hidden;
   flex-direction: column;
   min-height: 100dvh;
-  padding: calc(var(--height) + var(--space2)) var(--space1);
+  padding: calc(var(--height) + var(--space2)) var(--space2);
 }
 div#Container {
   gap: var(--space1);
   padding: var(--space1) var(--space2);
 }
 section#Container {
-  gap: var(--space1);
+  flex-wrap: wrap;
+  gap: var(--space2);
 }
 form {
   gap: var(--space1);
   padding: var(--space2);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+a,
+p {
+  text-align: center;
+  font-family: var(--family2);
 }
 h2 {
   font-size: var(--size2);
