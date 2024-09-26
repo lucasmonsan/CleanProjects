@@ -1,0 +1,61 @@
+:root {
+	--base: min(3.75vw, 1rem);
+	--header-h: calc(var(--base) * 5);
+	--footer-h: calc(var(--base) * 5);
+	--family-1: "Exo", sans-serif;
+	--family-2: "Orbitron", sans-serif;
+	--slow: 0.5s ease-in-out;
+	--fast: 0.25s ease-in-out;
+	--white: #efedeb;
+	--black: #131116;
+	--color-1: #456990;
+	--color-2: #68452e;
+	--color-3: #f45b69;
+
+	--xxxs: calc(var(--base) * 0.125);
+	--xxs: calc(var(--base) * 0.25);
+	--xs: calc(var(--base) * 0.5);
+	--sm: calc(var(--base) * 0.75);
+	--md: var(--base);
+	--lg: calc(var(--base) * 1.5);
+	--xl: calc(var(--base) * 2);
+	--xxl: calc(var(--base) * 2.5);
+	--xxxl: calc(var(--base) * 3);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html > div {
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100dvh;
+	height: 100%;
+	background-color: var(--white);
+}
+
+@media (max-width: 640px) {
+	main#root {
+		width: 100%;
+	}
+}
+@media (min-width: 641px) {
+	main#root {
+		width: 100%;
+		max-width: 1920px;
+	}
+}
