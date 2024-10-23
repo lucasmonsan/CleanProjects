@@ -1,0 +1,31 @@
+.leaflet-container {
+	width: 100%;
+}
+.leaflet-container .leaflet-top {
+	display: none;
+}
+.leaflet-popup-content {
+	margin: var(--lg) var(--md) var(--md);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background-color: var(--black);
+}
+.leaflet-popup-close-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--xl) !important;
+	height: var(--xl) !important;
+}
+.leaflet-bottom {
+	width: 100%;
+}
+.leaflet-control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--xxs);
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.75) !important;
+}

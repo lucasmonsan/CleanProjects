@@ -1,0 +1,48 @@
+:root {
+	--base: min(3.75vw, 1rem);
+
+	--z-hide: -1;
+	--z-app: 1;
+	--z-loading: 9;
+	--z-debug: 10;
+
+	--footer-h: calc(var(--base) * 3);
+
+	--family-1: 'Rubik', serif;
+	--family-2: 'Nunito', sans-serif;
+
+	--slow: 0.5s ease-in-out;
+	--fast: 0.25s ease-in-out;
+
+	--xxxs: calc(var(--base) * 0.125);
+	--xxs: calc(var(--base) * 0.25);
+	--xs: calc(var(--base) * 0.5);
+	--sm: calc(var(--base) * 0.75);
+	--md: var(--base);
+	--lg: calc(var(--base) * 1.5);
+	--xl: calc(var(--base) * 2);
+	--xxl: calc(var(--base) * 2.5);
+	--xxxl: calc(var(--base) * 3);
+
+	--bg: #efedeb;
+	--text: #1b1b1b;
+	--comp: #292929;
+	--border: #5e5e5e;
+	--color-1: #456990;
+	--color-2: #68452e;
+	--color-3: #f45b69;
+
+	--shadow-1: rgba(46, 46, 51, 0.5) 0px var(--xs) var(--lg) 0px;
+
+	--radius-1: var(--md);
+}
+
+.dark-theme {
+	--bg: #1b1b1b;
+	--text: #efedeb;
+	--comp: #292929;
+	--border: #5e5e5e;
+	--color-1: #456990;
+	--color-2: #68452e;
+	--color-3: #f45b69;
+}
